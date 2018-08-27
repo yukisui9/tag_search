@@ -7,7 +7,7 @@ import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-sys.path.append('../')
+sys.path.append('.')
 from util.utils import set_io_dir
 
 
