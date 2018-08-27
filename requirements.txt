@@ -1,0 +1,4 @@
+pixivpy
+opencv-python
+numpy
+seaborn
