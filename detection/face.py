@@ -57,7 +57,7 @@ def sieve_by_hue(input, output):
     dist = np.array(median_dist)
     std = np.std(median_dist)
     mean = np.mean(median_dist)
-    selected = [i for i in np.where((mean-std<dist) & (dist<mean+std))[0]]
+    selected = np.where((mean-std<dist) & (dist<mean+std))[0]
 
     for i in selected:
         shutil.copyfile(faces[i], os.path.join(output, os.path.basename(faces[i])))
